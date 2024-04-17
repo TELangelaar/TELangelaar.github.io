@@ -8,26 +8,44 @@ body {
   justify-content: space-between;
 }
 
-.login {
-  form {
+.login form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-top: 248px;
+  padding: 48px 36px;
+  background-color: red;
+}
+
+.login form input {
+  width: 240px;
+}
+
+.login form button {
+  margin-top: 36px;
+}
+
+.login form button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #mobile-message {
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
-    margin-top: 248px;
-    padding: 48px 36px;
-    background-color: red;
+    text-align: center;
+    margin-top: 50%;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+  }
 
-    input {
-        width: 240px;
-      }
-
-      button {
-        margin-top: 36px;
-      }
-      button:hover {
-        background-color: black;
-        color: white;
-        cursor: pointer;
-      }
+  .container {
+    display: none;
+  }
+  body {
+    background-color: blanchedalmond;
   }
 }
