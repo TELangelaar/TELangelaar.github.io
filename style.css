@@ -25,10 +25,19 @@ body {
   margin-top: 36px;
 }
 
-.login form button:hover {
+.login form button:hover, button:focus {
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+#mobile-message {
+  display: none;
+  height: 0px;
+}
+
+td {
+    padding: 4px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,4 +57,8 @@ body {
   body {
     background-color: blanchedalmond;
   }
+}
+
+td:hover {
+    color: rgb(126, 113, 199);
 }
