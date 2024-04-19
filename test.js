@@ -104,6 +104,7 @@ function LoginHandler() {
         "repoldnaL",
         "aterG",
         "okiN",
+        "einnaJ"
       ];
 
       let cbar = abc.map((s) => cba(s));
